@@ -1,0 +1,30 @@
+%close {
+  content: '';
+  position: absolute;
+      width: 12px;
+      height: 2px;
+      top: 28px;
+      left: 10px;
+      background-color: rgb(103, 100, 100);
+      z-index: 1;
+}
+
+.input_container {
+padding: 20px;
+}
+.input_main {
+  padding-left: 30px;
+}
+
+.input_cancel {
+position: relative;
+cursor: pointer;
+  &::after {
+@extend %close;
+rotate: (45deg);
+}
+&::before {
+    @extend %close;
+    rotate: (-45deg);
+  }
+}

@@ -1,0 +1,13 @@
+.user_card {
+  padding-top: 20px;
+  &__header {
+    display: flex;
+    .user_card__avatar {
+      padding: 5px 35px;
+      scale: 2;
+      position: relative;
+      top: 80px;
+    }
+  }
+
+}

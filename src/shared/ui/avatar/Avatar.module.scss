@@ -1,0 +1,38 @@
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(191, 190, 190);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.113);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.243);
+
+  cursor: pointer;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 5px;
+    width: 29px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+.user_photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

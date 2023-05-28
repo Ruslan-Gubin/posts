@@ -1,0 +1,27 @@
+.aside_user {
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 10px;
+
+
+
+  &__photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+
+  &__description {
+  padding: 10px;
+    
+}
+&__name {
+  padding: 15px 0;
+  font-size: 1.6rem;
+}
+&__email {
+  padding: 15px 0;
+  font-size: 1.2rem;
+}
+}

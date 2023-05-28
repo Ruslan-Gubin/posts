@@ -1,0 +1,52 @@
+.root {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.181);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 50px;
+  top: 20px;
+  margin-bottom: 10px;
+
+  background-image: linear-gradient(
+    to top,
+    (rgb(242, 242, 242), rgb(250, 243, 243))
+  );
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .info_container {
+    padding: 10px 0;
+
+    .info_field {
+      padding: 5px 0;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.bird {
+  width: 10px;
+  height: 2px;
+  background-color: black;
+  rotate: (35deg);
+  position: relative;
+  top: 10px;
+  left: -35px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 6px;
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    rotate: (-75deg);
+  }
+}
+.open {
+  rotate: (215deg);
+  top: 10px;
+  left: -28px;
+}

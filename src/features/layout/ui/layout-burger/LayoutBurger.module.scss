@@ -1,0 +1,39 @@
+%burgerContent {
+  width: 30px;
+  height: 4px;
+  background-color: rgb(83, 83, 83);
+  border-radius: 10px;
+}
+
+.layout_burger {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.321);
+  cursor: pointer;
+  margin: 15px;
+
+  &__content {
+    @extend %burgerContent;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 0;
+      @extend %burgerContent;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      @extend %burgerContent;
+    }
+  }
+}

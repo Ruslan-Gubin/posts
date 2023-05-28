@@ -1,0 +1,42 @@
+.show_comment {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__button {
+    align-self: flex-end;
+    width: 200px;
+  }
+  .comments_container {
+    padding: 15px;
+    padding-right: 30px;
+    animation: openComments 0.5s ease;
+    position: absolute;
+    z-index: 10;
+    top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.164);
+  }
+}
+
+@keyframes openComments {
+  0% {
+    left: -1500px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.164);
+    background-color: white;
+  }
+  50% {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.033);
+    background-color: rgba(255, 255, 255, 0.043);
+  }
+  100% {
+    left: 0px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+  }
+}

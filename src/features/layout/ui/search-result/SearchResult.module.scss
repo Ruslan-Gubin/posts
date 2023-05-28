@@ -1,0 +1,28 @@
+.search {
+  padding: 10px 0px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 11;
+  width: 307px;
+  max-height: 180px;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  scrollbar-width: thin;
+  &_item {
+    padding: 8px 8px;
+    cursor: pointer;
+    display: block;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      background-color: rgb(240, 240, 240);
+    }
+  }
+}

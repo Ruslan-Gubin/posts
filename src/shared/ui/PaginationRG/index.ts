@@ -1,0 +1,1 @@
+export { PaginationRG } from "./PaginationRG";

@@ -1,0 +1,21 @@
+.info {
+
+  background-image: linear-gradient(to top, (rgb(254, 254, 254),rgb(249, 240, 240)));
+  padding: 15px;
+  display: inline-block;
+  border-radius: 10px;
+color: rgb(69, 67, 67);
+box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.307);
+
+  .info_field {
+padding: 5px 0;
+font-size: 1.3rem;
+  }
+
+
+  
+  .info_field__none {
+    display: none;
+  }
+}
+

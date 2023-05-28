@@ -1,0 +1,78 @@
+%close {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background-color: rgb(61, 58, 58);
+  top: 20px;
+  left: 10px;
+  border-radius: 10px;
+}
+
+.layout_aside {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  background-color: rgba(5, 5, 5, 0);
+  display: none;
+
+  &__content {
+    width: 450px;
+    background-image: linear-gradient(to top, (rgb(174, 174, 174), rgb(255, 255, 255)));
+    border-right: 1px solid rgba(0, 0, 0, 0.253);
+
+    height: 100vh;
+    position: relative;
+  }
+
+  &__hadow {
+    width: 60%;
+    height: 100vh;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: '';
+      @extend %close;
+      rotate: (45deg);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      @extend %close;
+      rotate: (-45deg);
+    }
+  }
+
+}
+
+.open_root {
+  animation: openRoot 0.5s ease;
+  background-color: rgba(5, 5, 5, 0.237);
+  display: flex;
+  left: 0px;
+}
+
+.open_content {
+  animation: openContent 0.5s ease;
+  left: 0px;
+}
+
+@keyframes openRoot {
+  0% {
+    background-color: rgba(5, 5, 5, 0);
+  }
+  100% {
+    background-color: rgba(5, 5, 5, 0.237);
+  }
+}
+
+@keyframes openContent {
+  0% {
+    left: -2500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
