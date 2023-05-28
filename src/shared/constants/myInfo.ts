@@ -4,7 +4,7 @@ export const myInfo = {
   username: "Gubin",
   email: "gubin_ruslan@ramble.ru",
   address: {
-    street: "Russia",
+    street: "Chekhov",
     suite: "Apt. 556",
     city: "Taganrog",
     zipcode: "92998-3874",
@@ -14,7 +14,7 @@ export const myInfo = {
     },
   },
   phone: "79494197155",
-  website: "https://github.com/Ruslan-Gubin",
+  website: "https://github.com/Ruslan-Gubin/posts",
   company: {
     name: "Home schooling",
     catchPhrase: "There is no time to explain I'd rather sing",

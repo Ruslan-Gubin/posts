@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom/client";
+ import ReactDOM from "react-dom/client";
 import { Suspense } from "react";
 import { RouterProvider } from "react-router";
 import { Provider } from "react-redux";
